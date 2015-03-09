@@ -1,0 +1,42 @@
+
+import java.util.Scanner;
+
+public class Game3
+{
+public static void main ( String[] args)
+	{
+	int player1;
+	int player2;
+	
+	Scanner input = new Scanner(System.in);
+	System.out.print( "Player 1: Choose 1.Paper, 2.Scissor, or 3.Rock: ");
+	player1 = input.nextInt();
+	
+	System.out.print( "Player 2: Choose 1.Paper, 2.Scissor, or 3.Rock: ");
+	player2 = input.nextInt();
+	
+	if (player1 == player2)
+		System.out.print("It is a tie");
+	
+	if (player1 == 3 && player2 == 2)
+		System.out.print("Player 1 win!");
+	
+	if (player1 == 2 && player2 == 1)
+		System.out.print("Player 1 win!");
+	
+	if (player1 == 1 && player2 == 3)
+		System.out.print("Player 1 win!");
+	
+	if (player1 == 3 && player2 == 1)
+		System.out.print("Player 2 win!");
+	
+	if (player1 == 1 && player2 == 2)
+		System.out.print("Player 2 win!");
+	
+	if (player1 == 2 && player2 == 3)
+		System.out.print("Player 2 win!");
+	
+	
+	}
+
+}
